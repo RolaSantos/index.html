@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<style>
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ff9ecf, #ffd6ec);
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  animation: fadeDown 1s ease;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+  padding: 20px;
+  background: lightpink;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+}
+
+.profile img {
+  width: 130px;
+  height: 140px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.profile img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: lightpink;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s forwards;
+}
+
+.section:nth-child(2) { animation-delay: 0.2s; }
+.section:nth-child(3) { animation-delay: 0.4s; }
+.section:nth-child(4) { animation-delay: 0.6s; }
+.section:nth-child(5) { animation-delay: 0.8s; }
+
+h2 {
+  border-bottom: 2px solid pink;
+  padding-bottom: 5px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateX(10px);
+  color: #ff4fa3;
+}
+
+a {
+  color: #2a6ecb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff4fa3;
+  text-decoration: underline;
+}
+
+.section:hover {
+  transform: translateY(-10px) scale(1.01);
+  transition: 0.3s;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Welcome to my Portfolio &#129293</h1>
+
+<div class="profile">
+  <img src="nyrie.jpg" alt="Profile">
+  <p>
+    Welcome to my <strong>Web Development Portfolio!</strong> This portfolio contains my WS101 lab exercises, showcasing my skills in organizing, managing, and handling data based on what I learned in class.
+  </p>
+</div>
+
+<div class="section">
+  <h2>&#128151 About Me</h2>
+  <p>
+    I’m Rola Nyrie Santos, a person who’s a bit shy at first, but I enjoy meeting new people, making new friends and i am still learning and honing my coding skills.
+  </p>
+</div>
+
+<div class="section">
+  <h2>&#127891 Education</h2>
+  <ul>
+    <li>College: College: 1st Year in Bachelor of Science in Information Technology (PSAU)</li></li>
+    <li>High School: Magalang Christian Ecumenical School Inc. (MCESI)</li>
+    <li>Elementary: Sta. Maria Elementary School</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>&#128152 What I Love</h2>
+  <ul>
+    <li>&#128214 Reading fictional books</li>
+    <li>&#127909 Watching movies and series</li>
+    <li>&#127952 Playing volleyball</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>&#128193 My Projects</h2>
+  <ul>
+    <h2> MIDTERMS </h2>
+    <li>&#128187 <a href="resume.html">Resume writing Using HTML</a></li>
+    <li>&#128187 <a href="Exer2list.html">HTML lists and Table</a></li>
+    <li>&#128187 <a href="forms.html">HTML Forms</a></li>
+    <li>&#128187 <a href="imagemap.html">Image Maps</a></li>
+    <li>&#128187 <a href="resume2.html">Applying CSS to your Resume</a></li>
+    <li>&#128187 <a href="Semantic.html">HTML layout using divs and Semantic Elements</a></li>
+  </ul>
+  
+    <ul>
+      <h2>FINALS</h2>
+    <li>&#128187 <a href="Responsive.html">Responsive Layout using Flex</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
